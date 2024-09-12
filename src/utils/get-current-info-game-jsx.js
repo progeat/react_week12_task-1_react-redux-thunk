@@ -1,4 +1,4 @@
-export const getCurrentInfoGame = (currentPlayer, isGameEnded, isDraw) =>
+export const getCurrentInfoGameJSX = (currentPlayer, isGameEnded, isDraw) =>
 	isGameEnded
 		? `Победа: ${currentPlayer}`
 		: isDraw

@@ -1,4 +1,4 @@
-export const FIELD_PARAM = ['', '', '', '', '', '', '', '', ''];
+export const FIELD_PARAM = [...Array(9)].fill('');
 
 export const WIN_PATTERNS = [
 	[0, 1, 2], // Варианты побед по горизонтали

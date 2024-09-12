@@ -1,5 +1,5 @@
 import { InformationLayout } from './information-layout';
-import { getCurrentInfoGame } from '../../utils';
+import { getCurrentInfoGameJSX } from '../../utils';
 import { useSelector } from 'react-redux';
 import { selectCurrentPlayer, selectIsDraw, selectIsGameEnded } from '../../selectors';
 
@@ -8,11 +8,11 @@ export const Information = () => {
 	const isDraw = useSelector(selectIsDraw);
 	const isGameEnded = useSelector(selectIsGameEnded);
 
-	const currentInfoGame = getCurrentInfoGame(currentPlayer, isGameEnded, isDraw);
+	const currentInfoGameJSX = getCurrentInfoGameJSX(currentPlayer, isGameEnded, isDraw);
 
 	return (
 		<>
-			<InformationLayout>{currentInfoGame}</InformationLayout>
+			<InformationLayout>{currentInfoGameJSX}</InformationLayout>
 		</>
 	);
 };

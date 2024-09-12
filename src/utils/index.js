@@ -1,1 +1,1 @@
-export * from './get-current-info-game';
+export * from './get-current-info-game-jsx';
